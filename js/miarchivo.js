@@ -1,89 +1,113 @@
-let precio
-function precioFinal(precio, cantCuotas){
-    return precio/cantCuotas
+class Usuario {
+    constructor (nombreYApellido, compras){
+        this.nombreYApellido = nombreYApellido
+        this.compras = compras;
+    }
 }
-let ayuda = 0;
-let nombreYApellido = prompt("Ingrese su nombre y apellido:")
-alert("Bienvenido a TecnologíaCoder "+ nombreYApellido)
-let respuesta = prompt("¿Necesita ayuda con una notebook? (SI/NO)")
-while (respuesta == "SI"){
-    ayuda += 1;
-    let modelo = prompt("Elija entre los 3 modelos disponibles: (A/B/C)")
+
+const eligeNotebook = () => {
+    return [
+        prompt("Elija entre los 3 modelos disponibles: (A/B/C)"),
+        parseInt(prompt("Ingrese la cantidad de cuotas a pagar"))
+    ];
+}
+
+
+let precio
+const precioFinal = (modelo, cantCuotas) => {
+    let precioTotal
     if (modelo == "A"){
-        alert("El modelo A vale $100.000")
         precio = 100000;
     } else if (modelo == "B"){
-        alert("El modelo B vale $85.000")
         precio = 85000;
     } else if (modelo == "C"){
-        alert ("El modelo C vale $75.000")
         precio = 75000;
-    } else {
-        alert ("No contamos con ese modelo en este momento.")
     }
-    let respCuotas = prompt("¿Desea pagarla en cuotas sin interés? (SI/NO)")
-    if (respCuotas == "SI") {
-        let cantCuotas = prompt("Elegí la cantidad de cuotas: (3/6/9/12)")
-        if (modelo == "A"){
-            switch(cantCuotas){
-                case "3":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "6":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "9":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "12":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                default:
-                    alert("No es posible hacerlo en esas cuotas.")
-            }
-        } else if(modelo == "B"){
-            switch(cantCuotas){
-                case "3":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "6":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "9":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "12":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                default:
-                    alert("No es posible hacerlo en esas cuotas.")
-            }
-        } else if(modelo == "C"){
-            switch(cantCuotas){
-                case "3":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "6":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "9":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                case "12":
-                    alert("El precio de cada cuota sería de: $" + precioFinal(precio,cantCuotas).toFixed(2))
-                    break;
-                default:
-                    alert("No es posible hacerlo en esas cuotas.")
-            }
+    if (modelo == "A"){
+        switch(cantCuotas){
+            case 3:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 6:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 9:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 12:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            default:
+                alert("No es posible hacerlo en esas cuotas.")
         }
-    } else {
-        alert("Paga todo en un solo pago.")
+    } else if(modelo == "B"){
+        switch(cantCuotas){
+            case 3:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 6:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 9:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 12:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            default:
+                alert("No es posible hacerlo en esas cuotas.")
+        }
+    } else if(modelo == "C"){
+        switch(cantCuotas){
+            case 3:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 6:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 9:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            case 12:
+                precioTotal = precio/cantCuotas.toFixed(2)
+                break;
+            default:
+                alert("No es posible hacerlo en esas cuotas.")
+        }
     }
-    respuesta = prompt("¿Necesita ayuda con otra notebook? (SI/NO)")
+    return precioTotal
+} 
+
+class Compra {
+    constructor(modelo, cantCuotas){
+        this.modelo = modelo;
+        this.cantCuotas = cantCuotas;
+        this.precioCompra = precioFinal(modelo,cantCuotas);
+    }
 }
-if (respuesta == "SI"){
+
+
+let clientes= [];
+let ayuda = 0;
+let nombreYApellido = prompt("Ingrese su nombre y apellido:")
+let usuarioActual = new Usuario(nombreYApellido, []);
+alert("Bienvenido a TecnologíaCoder "+ nombreYApellido)
+alert("Los 3 modelos son:\n Modelo A: ALTA GAMA $100.000 \n Modelo B: MEDIA GAMA $85.000 \n Modelo C: BAJA GAMA $75.000")
+let respuesta = confirm("¿Necesita ayuda con una notebook? ")
+while (respuesta){
+    ayuda += 1;
+    let [modelo, cantCuotas] = eligeNotebook();
+    usuarioActual.compras.push(new Compra(
+        modelo,
+        cantCuotas
+    ));
+    alert(`Detalles de la compra: \nNOTEBOOK \nMODELO: ${modelo} \nCUOTAS: ${cantCuotas} \nCADA CUOTA ES: ${precioFinal(modelo,cantCuotas)} \nPRECIO FINAL: ${cantCuotas * precioFinal(modelo,cantCuotas).toFixed(2)}`);
+    respuesta = confirm("¿Necesita ayuda con una notebook? ")
+}
+clientes.push(usuarioActual)
+if (respuesta){
     alert("Gracias por comprar en TecnologíaCoder " + nombreYApellido + ", vuelva pronto.")
-} else if((respuesta == "NO") && (ayuda > 0)){
+} else if((!respuesta) && (ayuda > 0)){
     alert("Gracias por comprar en TecnologíaCoder " + nombreYApellido + ", vuelva pronto.")
 } else {
     alert ("Esperemos que la próxima podamos ayudarlo " + nombreYApellido + ", vuelva pronto.")
