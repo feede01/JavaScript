@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    padding: 20px;
+    background-color: #141C29;
+}
+
+
+p {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    width: 100%;
+}
+
+#principal{
+    gap: 30px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#verCarrito{
+    background-color:white;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-top: 10px;
+    display: inline;
+    padding: 10px;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+}
+
+img{
+    object-fit: cover;
+    border-radius: 20px 20px 0px 00px;
+}
+
+.card {
+    box-shadow: 5px 20px 20px rgba(211, 211, 211, 0.3);
+    border-radius: 0px 0px 20px 20px;
+    height: 600px;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transition: .5s ease-in;
+    box-shadow: 5px 20px 60px rgba(211, 211, 211, 0.519);
+}
+
+.card .card-image {
+    text-align: center;
+    font-size: 60px;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-description{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    width: 1fr;
+}
+.card .button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+.button-delete {
+    background: rgb(255, 0, 0) !important;
+}
+
+.button-small {
+    font-size: .8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding: 0 1.5rem;
+  }
+
+.centrar-div {
+    text-align: center;
+}
+
+thead tr {
+    background-color: rgb(62, 40, 83);
+    color: white;
+}
+
+#tablehead {
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(173, 216, 230, 0.252) !important;
+}
+
+.centrar {
+    text-align: center;
+}
