@@ -10,7 +10,11 @@ body {
     background-color: #141C29;
 }
 
-
+.tituloCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 p {
     font-size: larger;
     display: flex;
@@ -134,4 +138,8 @@ tbody tr:nth-child(even) {
 
 .centrar {
     text-align: center;
+}
+
+.button{
+    background-size: cover;
 }

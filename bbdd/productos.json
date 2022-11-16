@@ -1,0 +1,74 @@
+[
+    {
+       "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/QJ0OrQ5jwk99GeywUA27/imagen",
+       "nombre": "PC Gamer Armada | AMD Ryzen 3 4350G + 8GB (2x4GB) + Radeon VEGA",
+       "descripcion": "Gama baja",
+       "precio": 90000
+    },
+    {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/QJ0OrQ5jwk99GeywUA27/imagen",
+        "nombre": "PC Gamer Armada | AMD Ryzen 5 4650G + 8GB (2x4GB) + Radeon VEGA",
+        "descripcion": "Gama baja",
+        "precio": 99999
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/QJ0OrQ5jwk99GeywUA27/imagen",
+        "nombre": "PC Gamer Armada | AMD Ryzen 5 5600G + 8GB (2x4GB) + Radeon VEGA",
+        "descripcion": "Gama baja",
+        "precio": 109000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/GRxegTQIYfWR6jQBazrk/imagen",
+        "nombre": "PC Gamer Armada | Intel Core I3 10100F + 8GB + GTX 1660 6Gb Radeon VEGA",
+        "descripcion": "Gama media",
+        "precio": 159000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/GRxegTQIYfWR6jQBazrk/imagen",
+        "nombre": "PC Gamer Armada | AMD Ryzen 3 4100 + 8GB + GTX 1660 6Gb Radeon VEGA",
+        "descripcion": "Gama media",
+        "precio": 179000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/GRxegTQIYfWR6jQBazrk/imagen",
+        "nombre": "PC Gamer Armada | Intel Core I5 10400F + 8GB + GTX 1660 6Gb Radeon VEGA",
+        "descripcion": "Gama media",
+        "precio": 185000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/G6WmP7IzSjPgDmNhXDSU/imagen",
+        "nombre": "PC Gamer Armada | Intel Core I5 10400F + 16GB (2x8GB) + RTX 3060 12Gb + 500GB",
+        "descripcion": "Gama alta",
+        "precio": 255000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/G6WmP7IzSjPgDmNhXDSU/imagen",
+        "nombre": "PC Gamer Armada | Intel Core I5 10400F + 16GB (2x8GB) + RTX 3060 TI 8Gb + 500GB",
+        "descripcion": "Gama alta",
+        "precio": 305000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/G6WmP7IzSjPgDmNhXDSU/imagen",
+        "nombre": "PC Gamer Armada | AMD Ryzen 5 5600X + 16GB (2x8GB) + RTX 3060 12Gb + 500GB NVME",
+        "descripcion": "Gama alta",
+        "precio": 310000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/YjZdnEDasiVBhqT6B6gQ/imagen",
+        "nombre": "Cooler CPU Cooler Master Hyper 212 Turbo ARGB Intel/AMD (1x12cm)",
+        "descripcion": "Componentes",
+        "precio": 10000
+     },
+     {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/43NOw4ooD3nbuU7keGDI/imagen",
+        "nombre": "Disco SSD M2 OFICIAL Western Digital Black 500Gb SN750 SE NVME 5000MB/S",
+        "descripcion": "Componentes",
+        "precio": 15000
+     },
+     {  
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/njj5QXEkfPAf87yZY5k5/imagen",
+        "nombre": "Memoria RAM Corsair 16Gb (2x8Gb) DDR4 3200Mhz Vengeance RGB Pro Black",
+        "descripcion": "Componentes",
+        "precio": 25000
+     }
+]
